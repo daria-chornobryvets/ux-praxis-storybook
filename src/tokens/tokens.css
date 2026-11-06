@@ -1,0 +1,136 @@
+/* Generated from tokens.json (UX Praxis design system). */
+
+:root, [data-theme="dark"] {
+  --bg: #12141b;
+  --glow-warm: rgba(120,45,32,0.22);
+  --glow-cool: rgba(45,55,130,0.22);
+  --glow-olive: rgba(80,90,34,0.18);
+  --surface: rgba(255,255,255,0.05);
+  --surface-dim: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.12);
+  --border-strong: rgba(255,255,255,0.18);
+  --border-hover: rgba(255,255,255,0.45);
+  --ink: #ffffff;
+  --ink-muted: #a8abb6;
+  --ink-dim: #8e92a0;
+  --accent: #8ea2ff;
+  --on-accent: #0e141c;
+  --accent-wash: rgba(142,162,255,0.2);
+  --good: #4fd39a;
+  --good-wash: rgba(79,211,154,0.14);
+  --bad: #ff8a7e;
+  --bad-wash: rgba(255,138,126,0.14);
+  --pill-off: rgba(255,255,255,0.16);
+  --tile: #2a2c36;
+  --popover: #1b1e29;
+  --code-bg: rgba(0,0,0,0.3);
+  --scrim: rgba(14,20,28,0.55);
+  --icon-blue: #4d8df7;
+  --icon-yellow: #ffc93c;
+  --icon-red: #f2605c;
+  --icon-green: #3cc9a0;
+  --icon-paper: #f4f1ea;
+  --icon-outline: #1f2029;
+  --shadow-card: none;
+  --shadow-popover: 0 12px 32px rgba(0,0,0,0.5);
+}
+
+[data-theme="light"] {
+  --bg: #edf0f7;
+  --glow-warm: rgba(255,176,150,0.35);
+  --glow-cool: rgba(140,160,255,0.30);
+  --glow-olive: rgba(196,214,120,0.30);
+  --surface: rgba(255,255,255,0.78);
+  --surface-dim: rgba(255,255,255,0.45);
+  --border: rgba(19,27,38,0.10);
+  --border-strong: rgba(19,27,38,0.16);
+  --border-hover: #131b26;
+  --ink: #131b26;
+  --ink-muted: #556072;
+  --ink-dim: #5f6a7c;
+  --accent: #3f54c8;
+  --on-accent: #ffffff;
+  --accent-wash: rgba(63,84,200,0.14);
+  --good: #0b6b49;
+  --good-wash: rgba(11,107,73,0.12);
+  --bad: #b3261e;
+  --bad-wash: rgba(179,38,30,0.10);
+  --pill-off: rgba(19,27,38,0.14);
+  --tile: #ffffff;
+  --popover: #ffffff;
+  --code-bg: rgba(19,27,38,0.06);
+  --scrim: rgba(19,27,38,0.38);
+  --icon-blue: #4d8df7;
+  --icon-yellow: #ffc93c;
+  --icon-red: #f2605c;
+  --icon-green: #3cc9a0;
+  --icon-paper: #f4f1ea;
+  --icon-outline: #1f2029;
+  --shadow-card: 0 1px 2px rgba(19,27,38,0.04);
+  --shadow-popover: 0 12px 32px rgba(19,27,38,0.16);
+}
+
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-48: 48px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-popover: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-pill: 999px;
+  --screen-width: 390px;
+  --touch-target: 44px;
+  --option-height: 56px;
+  --tile-home: 56px;
+  --tile-lesson: 40px;
+  --pill-height: 8px;
+  --logo-header: 28px;
+  --logo-share: 56px;
+  --share-card-width: 1080px;
+  --share-card-height: 1350px;
+  --progress-bar-height: 10px;
+  --font-display: "Unbounded", "Onest", system-ui, sans-serif;
+  --font-sans: "Onest", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.t-brand { font-family: var(--font-display); font-size: 14px; line-height: 14px; font-weight: 700; letter-spacing: -0.01em; }
+
+.t-title { font-family: var(--font-display); font-size: 24px; line-height: 27.4px; font-weight: 700; letter-spacing: -0.02em; }
+
+.t-heading-onb { font-family: var(--font-sans); font-size: 22px; line-height: 26.4px; font-weight: 700; }
+
+.t-question { font-family: var(--font-sans); font-size: 18px; line-height: 27.9px; font-weight: 400; }
+
+.t-question-ask { font-family: var(--font-sans); font-size: 18px; line-height: 23.4px; font-weight: 600; }
+
+.t-lead { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+
+.t-option { font-family: var(--font-sans); font-size: 16px; line-height: 21.6px; font-weight: 500; }
+
+.t-button { font-family: var(--font-sans); font-size: 15px; line-height: 15px; font-weight: 600; }
+
+.t-card-title { font-family: var(--font-sans); font-size: 17px; line-height: 22.1px; font-weight: 600; }
+
+.t-card-desc { font-family: var(--font-sans); font-size: 14px; line-height: 20.3px; font-weight: 400; }
+
+.t-counter { font-family: var(--font-mono); font-size: 13px; line-height: 17px; font-weight: 500; }
+
+.t-label { font-family: var(--font-mono); font-size: 12px; line-height: 15.6px; font-weight: 500; letter-spacing: 0.08em; }
+
+.t-tag { font-family: var(--font-mono); font-size: 11px; line-height: 14.3px; font-weight: 500; letter-spacing: 0.06em; }
+
+.t-caption { font-family: var(--font-mono); font-size: 12px; line-height: 15.6px; font-weight: 500; letter-spacing: 0.04em; }
+
+.t-progress { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 500; }
+
+.t-code { font-family: var(--font-mono); font-size: 13px; line-height: 18.2px; font-weight: 500; }
