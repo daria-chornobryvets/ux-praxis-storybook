@@ -13,7 +13,7 @@ export const POSES = {
 
 /** The UX Praxis character, a 3D render. Each pose has a dark-theme and a light-theme image; the one for the current theme is shown. Images keep their aspect ratio. */
 export function Mascot({ pose = 'happy', width = 300 }) {
-  const style = { width, maxWidth: '100%', height: 'auto', aspectRatio: '1 / 1', objectFit: 'contain' };
+  const style = { width, maxWidth: '100%', height: 'auto' };
   return (
     <>
       <img className="ux-mascot ux-mascot--dark" src={`/illustrations/mascot-${pose}-dark.webp`} alt={POSES[pose]} style={style} />

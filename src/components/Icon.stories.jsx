@@ -25,3 +25,26 @@ export const StatusIcons = {
     </div>
   ),
 };
+
+const COLOUR_ICONS = [
+  'topic-metrics', 'topic-nielsen-heuristics', 'topic-wcag', 'topic-laws-of-ux', 'topic-research-methods',
+  'level-beginner', 'level-intermediate', 'level-advanced', 'test',
+];
+
+/** Flat coloured icons, 40 px on a 56 px tile (`--tile`). The same in both themes. */
+export const ColouredIcons = {
+  name: 'Coloured icons',
+  parameters: { wide: true },
+  render: () => (
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+      {COLOUR_ICONS.map((n, i) => (
+        <div key={n} style={{ ...cell, width: 120 }}>
+          <span style={{ width: 56, height: 56, display: 'grid', placeItems: 'center', background: 'var(--tile)', border: '1px solid var(--border)', borderRadius: 'var(--radius-xl)' }}>
+            <img src={`/illustrations/${n}.svg`} alt={`Icon ${i + 1}`} width={40} height={40} />
+          </span>
+          <span>Icon {i + 1}</span>
+        </div>
+      ))}
+    </div>
+  ),
+};

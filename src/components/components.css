@@ -146,6 +146,6 @@ button { font-family: inherit; }
 .ux-badge--good { display: inline-flex; align-items: center; gap: 6px; padding-left: 6px; border-color: var(--good); color: var(--good); }
 
 /* ---- Mascot: one image per theme ---- */
-.ux-mascot { display: block; border-radius: var(--radius-xl); }
+.ux-mascot { display: block; }
 :root:not([data-theme="light"]) .ux-mascot--light { display: none; }
 [data-theme="light"] .ux-mascot--dark { display: none; }
