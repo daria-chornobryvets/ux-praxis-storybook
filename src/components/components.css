@@ -144,3 +144,8 @@ button { font-family: inherit; }
 .ux-dialog .ux-field-status--good { color: var(--good); }
 
 .ux-badge--good { display: inline-flex; align-items: center; gap: 6px; padding-left: 6px; border-color: var(--good); color: var(--good); }
+
+/* ---- Mascot: one image per theme ---- */
+.ux-mascot { display: block; border-radius: var(--radius-xl); }
+:root:not([data-theme="light"]) .ux-mascot--light { display: none; }
+[data-theme="light"] .ux-mascot--dark { display: none; }

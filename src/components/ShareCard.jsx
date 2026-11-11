@@ -25,7 +25,8 @@ export function ShareCard({ test = 'Card title', date = '00.00.0000', badge = 'B
       <text x="960" y="150" textAnchor="end" {...mono({ fontWeight: 500, fontSize: 30 })} fill="var(--ink-muted)">{date}</text>
       <text x="120" y="250" {...mono({ fontWeight: 600, fontSize: 32 })} fill="var(--ink-muted)">CAPTION</text>
       <text x="120" y="325" fontFamily="Onest, sans-serif" fontWeight="700" fontSize="60" fill="var(--ink)">{test}</text>
-      <image href="/illustrations/mascot-happy.webp" x="110" y="390" width="860" height="620" />
+      <image className="ux-mascot--dark" href="/illustrations/mascot-happy-dark.webp" x="260" y="350" width="560" height="560" preserveAspectRatio="xMidYMid meet" />
+      <image className="ux-mascot--light" href="/illustrations/mascot-happy-light.webp" x="260" y="350" width="560" height="560" preserveAspectRatio="xMidYMid meet" />
       <text x="540" y="1120" textAnchor="middle" fontFamily="Onest, sans-serif" fontWeight="600" fontSize="44" fill="var(--ink)">{badge}</text>
       <text x="540" y="1178" textAnchor="middle" fontFamily="Onest, sans-serif" fontWeight="500" fontSize="34" fill="var(--ink-muted)">{time} · {mastered}%</text>
     </svg>

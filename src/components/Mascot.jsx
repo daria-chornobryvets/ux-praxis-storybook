@@ -11,7 +11,13 @@ export const POSES = {
   waving: 'waving',
 };
 
-/** The UX Praxis character. Colours are baked in, so it looks the same in both themes. */
+/** The UX Praxis character, a 3D render. Each pose has a dark-theme and a light-theme image; the one for the current theme is shown. Images keep their aspect ratio. */
 export function Mascot({ pose = 'happy', width = 300 }) {
-  return <img src={`/illustrations/mascot-${pose}.webp`} alt={POSES[pose]} width={width} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />;
+  const style = { width, maxWidth: '100%', height: 'auto', aspectRatio: '1 / 1', objectFit: 'contain' };
+  return (
+    <>
+      <img className="ux-mascot ux-mascot--dark" src={`/illustrations/mascot-${pose}-dark.webp`} alt={POSES[pose]} style={style} />
+      <img className="ux-mascot ux-mascot--light" src={`/illustrations/mascot-${pose}-light.webp`} alt={POSES[pose]} style={style} />
+    </>
+  );
 }
