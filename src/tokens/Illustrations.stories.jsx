@@ -10,6 +10,7 @@ const FILES = [
   ['mascot-pointing', 150],
   ['mascot-welcoming', 150],
   ['mascot-cheering', 150],
+  ['mascot-waving', 150],
   ['level-beginner', 40],
   ['level-intermediate', 40],
   ['level-advanced', 40],
@@ -27,7 +28,7 @@ export const All = {
                 <img src={`/illustrations/${name}.svg`} alt={name} width={w} />
               </span>
             ) : (
-              <img src={`/illustrations/${name}.svg`} alt={name} width={w} style={{ maxHeight: 116 }} />
+              <img src={`/illustrations/${name}.webp`} alt={name} width={w} style={{ maxHeight: 116 }} />
             )}
           </div>
           <figcaption style={{ font: '500 12px var(--font-mono)', color: 'var(--ink-muted)' }}>{name}</figcaption>

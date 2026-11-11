@@ -8,9 +8,10 @@ export const POSES = {
   pointing: 'pointing',
   welcoming: 'welcoming',
   cheering: 'cheering',
+  waving: 'waving',
 };
 
 /** The UX Praxis character. Colours are baked in, so it looks the same in both themes. */
 export function Mascot({ pose = 'happy', width = 300 }) {
-  return <img src={`/illustrations/mascot-${pose}.svg`} alt={POSES[pose]} width={width} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />;
+  return <img src={`/illustrations/mascot-${pose}.webp`} alt={POSES[pose]} width={width} style={{ display: 'block', maxWidth: '100%', height: 'auto' }} />;
 }
